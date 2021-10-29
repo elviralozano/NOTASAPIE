@@ -302,6 +302,10 @@ h2 h3 h4 {
         margin: 10px 0;
         background: none;
     }
+    &__img{
+        height: 50px;
+        width: 50px;
+    }
 }
 .apuesta{
     color: $color-principal;
@@ -733,6 +737,53 @@ align-items: center;
         }
     }
 }
+
+.page404{
+    margin: 0 auto;
+    height: auto;
+    padding: 30px;
+    text-align: center;
+    &__gif{
+        height: 300px;
+    }
+    &__titulo{
+        font-family: $font-logo;
+        font-size: 120px;
+        font-weight: 60px;
+        color: $color-principal;
+    }
+    &__text{
+        padding: 0px;
+        font-family: $font-logo;
+        font-size: 50px;
+        color: $color-terciario;
+        &--small{
+            font-weight: 100px;
+            font-family: $font-titulos;
+        }
+    }
+    
+    &__btn{
+        font-family: $font-logo;
+        font-size:40px;
+        color:$color-secundario;
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-left:20px;
+        padding-right:20px;
+        background-color:$color-principal;
+        border: none;
+    }
+
+    &__enlace{
+        text-decoration: none;
+        color: $color-secundario;
+        &:hover{
+            color: $color-terciario;
+        }
+    }
+}
+
 .footer{
     margin: 0;
     padding: 0%;

@@ -243,6 +243,9 @@ h2 h3 h4 {
   .proyectos__title {
     margin: 10px 0;
     background: none; }
+  .proyectos__img {
+    height: 50px;
+    width: 50px; }
 
 .apuesta {
   color: #e3b82d;
@@ -604,6 +607,42 @@ h2 h3 h4 {
     .contacto .contacto__container {
       flex-direction: row;
       align-items: center; } }
+
+.page404 {
+  margin: 0 auto;
+  height: auto;
+  padding: 30px;
+  text-align: center; }
+  .page404__gif {
+    height: 300px; }
+  .page404__titulo {
+    font-family: "212 Phoenix Sans";
+    font-size: 120px;
+    font-weight: 60px;
+    color: #e3b82d; }
+  .page404__text {
+    padding: 0px;
+    font-family: "212 Phoenix Sans";
+    font-size: 50px;
+    color: #828585; }
+    .page404__text--small {
+      font-weight: 100px;
+      font-family: "Noto Serif", serif; }
+  .page404__btn {
+    font-family: "212 Phoenix Sans";
+    font-size: 40px;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e3b82d;
+    border: none; }
+  .page404__enlace {
+    text-decoration: none;
+    color: #000000; }
+    .page404__enlace:hover {
+      color: #828585; }
 
 .footer {
   margin: 0;
