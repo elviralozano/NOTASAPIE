@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Disfruta de la literatura y arte de Colombia, a través de crónicas, poemas, análisis, ensayos, galerías y videos.">
     <meta name="keywords" content="ARTE, COLOMBIA, LITERATURA, ANÁLISIS, CULTURA, HISTORIA">
-    <link rel="icon" type=imagen/png href="./Resources/favicon.png">
+    <link rel="icon" type=imagen/png href="./Resources/Imgs/favicon.png">
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/300f56ccf0.js" crossorigin="anonymous"></script>
@@ -16,12 +16,12 @@
 <body>
     <nav class="nav">
         <div class="nav__container">
-            <div class="nav__logo">
-                <a href="./index.html"><img src="./Resources/LogoNotasapie-min.png" alt="LogoNotasapie" class="nav__img"></a>
+            <div>
+                <a href="./index.html"><img src="./Resources/Imgs/LogoNotasapie-min.png" alt="LogoNotasapie" class="nav__img"></a>
                 <span class="nav__titulo">Notas a pie</span>  
             </div>
             <label for="menu" class="nav__label">
-                <img src="./Assets/menu.svg" alt= iconomenu class="nav__icon">
+                <img src="./Resources/SVG/menu.svg" alt= iconomenu class="nav__icon">
             </label>
             <input type="checkbox" id="menu" class="nav__input">
             <div class="nav__menu">
@@ -33,20 +33,16 @@
         </div>
     </nav>
     <header class="inicio">
-        <div class="inicio__card">
-            <h1 class="inicio__title">
-                Caminante no hay camino
-            </h1>
+        <div class="inicio__card1">
+            <h1 class="inicio__bienvenida">¡Francia Márquez presidenta!</h1>
+        </div>
+        <div class="inicio__card2">
             <p class="inicio__p">
-                "Caminante, son tus huellas, el camino y nada más;
-                Caminante, no hay camino,se hace camino al andar.
-                Al andar se hace el camino,y al volver la vista atrás
-                se ve la senda que nunca, se ha de volver a pisar.
-                Caminante no hay camino, sino estelas en la mar". <span class="inicio__p--italic">Antonio Machado</span>
+                "A mí me preguntan “cuál es su programa ahora”, y no es porque no tengamos propuestas, pero me lo preguntan a mí y no se lo preguntan a otros candidatos. El programa debe estar en este momento en construcción, y no en construcción individual en un escritorio, sino en construcción colectiva, porque este es el momento de los pueblos y desde de los pueblos construimos.". <span class="inicio__p--italic">Francia Márquez</span>
             </p>
         </div>
         <div class="inicio__img">
-        <img src="./Resources/Caminante1.svg" alt= Hombrecaminando class="inicio__img--size">
+        <img src="./Resources/Imgs/Soy porque somos - FM.jpg" alt= IlustraciónHombrecaminando class="inicio__img--size">
         </div>
     </header>
     <main>
@@ -55,30 +51,55 @@
                 <div class="proyectos__type">
                     <i class="fas fa-feather"></i>
                     <h2 class="proyectos__title">Ensayos</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p class="proyectos__text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
                 <div class="proyectos__type">
                     <i class="fas fa-camera"></i>
                     <h2 class="proyectos__title">Fotoreportaje</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p class="proyectos__text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
                 <div class="proyectos__type">
                     <i class="fas fa-book-reader"></i>
                     <h2 class="proyectos__title">Reseñas</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <p class="proyectos__text">Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
                 </div>
             </div>
         </section>
         <section class="apuesta">
             <div>
                 <div class="apuesta__card">
-                    <h3>Apuesta</h3>
+                    <h3>Intereses</h3>
                     <p class="apuesta__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, minima.</p>
                 </div>
                 <div class="apuesta__formatos">
-                    <div class="apuesta__tipo">Cuento</div>
-                    <div class="apuesta__tipo">Novela</div>
-                    <div class="apuesta__tipo">Crónicas</div>
+                    <div class="apuesta__tipo">
+                        <h4>Crónicas</h4>
+                        <img src="./Resources/SVG/ensayos2.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Podcasting</h4>
+                        <img src="./Resources/SVG/historias7.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Documentales</h4>
+                        <img src="./Resources/SVG/reseñas4.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Investigación</h4>
+                        <img src="./Resources/SVG/reseñas4.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Feminismo</h4>
+                        <img src="./Resources/SVG/historias7.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Escritura</h4>
+                        <img src="./Resources/SVG/ensayos2.svg" alt="#" class="apuesta__img">
+                    </div>
+                    <div class="apuesta__tipo">
+                        <h4>Artes</h4>
+                        <img src="./Resources/SVG/reseñas4.svg" alt="#" class="apuesta__img">
+                    </div>
                 </div>
             </div>
         </section>
@@ -93,7 +114,7 @@
                 <li class="footer__social--icons"><a href="#"><i class="fab fa-instagram"></i></a></li>
             </ul>
             <div class="footer__bottom">
-                <p>Copyright &copy; Notas a pie. Designed by <span class="footer__bottom--italic">Elvira Lozano</span></p>
+                <p>Copyright &copy; Notas a pie. Designed by Elvira Lozano</p>
             </div>
         </div>
     </footer>
