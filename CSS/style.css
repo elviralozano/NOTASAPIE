@@ -2,29 +2,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif&family=Noto+Serif+KR:wght@200&display=swap");
 @import url("../Resources/212-phoenix-sans-cufonfonts-webfont/212 Phoenix Sans DEMO.woff");
 h1 {
-  font-size: 36px; }
+  font-size: 46px; }
 
 h2 {
-  font-size: 32px; }
+  font-size: 42px; }
 
 h3 {
-  font-size: 28px; }
+  font-size: 38px; }
 
 h4 {
-  font-size: 24px; }
+  font-size: 34px; }
 
 h5 {
-  font-size: 20px; }
-
-* {
-  margin: 0px;
-  padding: 0;
-  box-sizing: border-box; }
+  font-size: 30px; }
 
 h2 h3 h4 {
   color: #000000;
   font-family: "Noto Serif";
   text-align: text-align; }
+
+body {
+  margin: 0 auto;
+  width: 100%; }
 
 .nav {
   background: #e3b82d;
@@ -63,10 +62,13 @@ h2 h3 h4 {
     gap: 2em; }
   .nav__item {
     color: #000000;
+    font-family: "Noto Serif", serif;
+    font-size: 20px;
+    font-weight: 300px;
     text-decoration: none;
     --clippy:polygon(0 0, 0 0, 0 100%, 0 100%); }
   .nav__item::after {
-    content: "";
+    content: "after";
     display: block;
     background: #828585;
     width: 90%;
@@ -74,10 +76,11 @@ h2 h3 h4 {
     height: 3px;
     clip-path: polygon(0 0, 0 1%, 0 100%, 0% 100%); }
   .nav__item:hover {
+    color: #fff;
     --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     transition: clip-path .5s; }
   .nav__input:checked + .nav__menu {
-    background: #828585; }
+    background: #e3b82d; }
   .nav__label, .nav .nav__input {
     display: none; }
 
@@ -156,24 +159,36 @@ h2 h3 h4 {
     height: 20px; } }
 
 .inicio {
-  width: 90%;
-  height: 130%;
+  width: 100%;
+  height: 110%;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  margin: auto;
+  margin: 0;
   gap: 5px;
   overflow: hidden;
-  align-items: center;
-  padding-top: 10px; }
-  .inicio__card {
-    grid-column: 2/8;
-    padding: 20px; }
-  .inicio__title {
+  align-items: center; }
+  .inicio__card1 {
+    grid-column: 1/-1;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(../Resources/Imgs/Tejiendolapaz.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    padding-bottom: 20px;
+    text-align: center; }
+  .inicio__bienvenida {
+    padding-top: 150px;
+    color: #fff;
     font-family: "Noto Serif", serif;
     font-weight: 700;
+    font-size: 58px;
     text-align: center;
-    animation-duration: 3s;
+    animation-duration: 5s;
     animation-name: aparecer; }
+  .inicio__card2 {
+    grid-column: 3/7;
+    padding: 20px;
+    padding-top: 50px; }
 
 @keyframes aparecer {
   0% {
@@ -191,31 +206,25 @@ h2 h3 h4 {
   .inicio__img {
     width: 100%;
     height: auto;
-    grid-column: 8/12;
-    padding: 0%;
-    padding-right: 0%;
-    margin: 20px;
-    border: 5px #e3b82d dotted;
-    transform: skewY(4deg); }
+    grid-column: 7/12;
+    text-align: center;
+    padding-top: 30px; }
     .inicio__img--size {
-      width: 95%;
-      max-width: 400px; }
+      width: 85%;
+      max-width: 400px;
+      height: 350px; }
 
 .proyectos {
-  height: 250px;
+  height: 310px;
   width: 100%;
   margin: 0 10px 0 10px;
-  display: flex;
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 0px;
   align-items: center;
-  padding: 0 5px 0 12px;
+  padding: 0 20px 0 20px;
   padding-left: 25px; }
   .proyectos__card {
     grid-column: 1/-1;
     display: flex;
-    width: 100%;
+    width: 120%;
     max-width: 1100px;
     height: 100%;
     margin: auto;
@@ -225,59 +234,66 @@ h2 h3 h4 {
     justify-content: space-evenly;
     align-items: center; }
   .proyectos__type {
-    background-color: #858282;
-    border: 5px solid white;
+    background-color: #e3b82d;
+    border: 5px solid #000000;
     width: 30%;
     color: #000000;
     box-shadow: 0 0 8px #e3b82d;
     overflow: hidden;
-    height: 220px;
+    font-size: 40px;
+    height: 240px;
     padding: 20px 10px;
     text-align: center; }
-  .proyectos [class^="fas fa"] {
-    font-size: 50px;
-    text-align: center; }
   .proyectos__title {
-    margin: 10px 0;
-    background: none; }
-  .proyectos__img {
-    height: 50px;
-    width: 50px; }
+    margin: 10px 0; }
+  .proyectos__text {
+    font-size: 18px;
+    font-family: "Noto Serif KR", serif; }
 
 .apuesta {
-  color: #e3b82d;
-  height: 250px;
-  padding-top: 30px;
-  padding-bottom: 20px;
-  font-size: 20px; }
+  color: #000000;
+  width: auto;
+  height: 500px;
+  margin: 10px 20px 0 20px;
+  padding: 10px 40px 0 30px;
+  font-size: 20px;
+  display: block; }
   .apuesta__card {
     grid-column: 1/-1;
     text-align: center; }
-  .apuesta__parrafo {
-    margin-top: 5px;
-    color: #858282;
-    padding: 10px;
-    font-family: "Noto Serif KR", serif; }
+  .apuesta__title {
+    padding-top: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #e3b82d;
+    text-align: center; }
   .apuesta__formatos {
     grid-column: 1/-1;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-evenly;
-    flex: wrap;
-    padding: 10px; }
+    padding: 2px; }
   .apuesta__tipo {
-    border: 5px solid #e3b82d;
+    margin: 10px;
+    padding: 5px;
     color: #000000;
     margin-top: 10px;
     font-size: "Noto Serif", serif;
     font-weight: 700;
     width: 20%;
     text-align: center; }
+  .apuesta__img {
+    height: 100px;
+    width: 110px; }
 
 @media (max-width: 600px) {
   .inicio {
     height: auto; }
-  .inicio__card {
-    grid-column: 1/-1; }
+  .inicio__card2 {
+    grid-column: 1/-1;
+    padding: 12px;
+    text-align: center; }
   .inicio_title {
     font-size: 15px; }
   .inicio__img {
@@ -296,7 +312,8 @@ h2 h3 h4 {
     margin-bottom: 10px; }
   .apuesta {
     height: auto;
-    width: 0 auto; }
+    width: 0 auto;
+    text-align: center; }
   .apuesta__formatos {
     display: block;
     width: 0 auto;
@@ -308,7 +325,7 @@ h2 h3 h4 {
     font-size: 15px; } }
 
 .nosotros {
-  width: 90%;
+  width: 80%;
   height: 100;
   margin: auto;
   margin-top: 0px;
@@ -316,14 +333,47 @@ h2 h3 h4 {
   padding: 0px 30px;
   text-align: justify; }
   .nosotros__title {
-    margin-top: 0%;
+    margin-top: 12px;
     padding: 7px;
     font-family: "Noto Serif", serif;
     text-align: center;
-    color: #000000;
-    animation-name: texto;
-    animation-iteration-count: unset;
-    animation-duration: 3s; }
+    color: #000000; }
+  .nosotros__subtitulo {
+    font-family: "Noto Serif", serif;
+    text-align: center;
+    font-size: 30px; }
+  .nosotros__parrafo {
+    font-family: #000000;
+    font-family: "Noto Serif KR", serif;
+    padding-left: 10px; }
+  .nosotros__descripcion {
+    padding-right: 10px;
+    margin-top: 0px;
+    margin-bottom: 15px; }
+  .nosotros__equipo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .nosotros__item {
+    margin: 8px;
+    order: 4;
+    background-color: #e3b82d; }
+  .nosotros__img {
+    width: 220px;
+    height: 220px;
+    padding: 5px; }
+  .nosotros__text {
+    padding-top: 10px;
+    font-family: "Noto Serif", serif;
+    font-weight: 800px;
+    font-size: 20px;
+    text-align: center; }
+  .nosotros__text2 {
+    font-family: "Noto Serif KR", serif;
+    font-size: 16px;
+    text-align: center;
+    color: #fff; }
 
 @keyframes texto {
   from {
@@ -332,23 +382,11 @@ h2 h3 h4 {
   to {
     margin-left: 0%;
     width: 100%; } }
-    .nosotros__title__parrafo {
-      font-family: #000000;
-      padding-left: 10px; }
-    .nosotros__title__equipo {
-      padding-right: 10px;
-      margin-top: 0px;
-      margin-bottom: 15px; }
-    .nosotros__title__img {
-      float: right;
-      width: 100px;
-      height: 300px;
-      text-align: center; }
 
 .caminos {
   background: black;
   color: #fff;
-  height: 670px;
+  height: 570px;
   padding-bottom: 20px; }
   .caminos__grid {
     display: grid;
@@ -361,54 +399,34 @@ h2 h3 h4 {
     align-items: center;
     padding-top: 10px; }
   .caminos__description {
+    background-color: #fff;
+    height: 400px;
+    border-radius: 20%;
+    padding: 20px 0 15px 0;
     grid-column: 7/13;
-    grid-row: 1/-1; }
-  .caminos__tipo {
-    font-size: 22px;
+    grid-row: 1/-1;
     text-align: center; }
   .caminos__title {
-    font-family: "Noto Serif", serif;
+    grid-column: 1/7;
+    grid-row: 1/-1;
+    margin: 0px 70px;
+    font-family: "212 Phoenix Sans";
+    font-size: 100px;
     color: #e3b82d;
-    animation-duration: 8s;
-    animation-name: aparecer; }
-  .caminos__p {
-    font-family: "Noto Serif KR", serif;
-    font-size: 22px;
-    animation-duration: 8s;
-    animation-name: aparecer; }
-
-.caminos__img {
-  grid-column: 1/7;
-  grid-row: 1/-1;
-  margin: 0px 70px;
-  width: auto; }
-  .caminos__img--size {
-    width: 630px;
-    max-width: 360px;
-    border: 4px dotted #e3b82d;
-    border-radius: 50px 20px; }
-  .caminos__img:hover {
-    transform: scale(0.9); }
-
-.caminos__trailer {
-  display: block;
-  margin: 0 auto;
-  padding-top: 30px;
-  border-width: 6px 6px 6px 6px;
-  margin: 10px;
-  justify-content: center; }
-  .caminos__trailer__trailertexto {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 100px;
-    padding-left: 10px;
-    font-size: 22px;
-    font-weight: 300;
     text-align: center; }
-  .caminos__trailer__trailer--titulo {
-    text-align: center;
-    font-weight: 500px; }
+    .caminos__title:hover {
+      color: #828585; }
+  .caminos__subtitle {
+    font-weight: 400px;
+    font-size: 25px;
+    font-family: "Noto Serif", serif;
+    color: #e3b82d; }
+    .caminos__subtitle:hover {
+      text-decoration: underline; }
+  .caminos__p {
+    font-size: 18px;
+    font-family: "Noto Serif KR", serif;
+    color: #000000; }
 
 @media (max-width: 600px) {
   .caminos {
@@ -425,53 +443,52 @@ h2 h3 h4 {
 .senderos {
   box-sizing: border-box;
   display: block;
-  padding-top: 32px;
-  background-color: #e3b82d;
-  color: black; }
+  padding-top: 22px;
+  color: black;
+  margin: 0 auto;
+  text-align: center; }
   .senderos__content {
     margin: 0 105px 0 105px;
     padding: 0 40px 0px 40px;
-    width: 1140px;
     text-align: center; }
   .senderos__description {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     margin-right: -15px;
     margin-left: -15px; }
   .senderos__title {
     font-size: 80px;
     font-style: oblique;
-    font-family: "212 Phoenix Sans";
-    font-style: normal;
+    font-family: "Noto Serif", serif;
     font-weight: normal;
     color: #000000;
     animation: 2s;
     animation-name: aparecer; }
-  .senderos__p {
-    font-family: monospace;
-    font-size: 20px;
-    color: #0e0505; }
+  .senderos__trailer {
+    padding: 0px;
+    width: 830px;
+    height: 560px;
+    text-align: center;
+    border: 12px #e3b82d solid;
+    background-color: #000000; }
 
 .cards {
-  margin: 100px;
-  padding-top: 20px;
   gap: 0;
   align-items: center; }
   .cards__grid {
-    width: 90%;
-    max-width: 1100px;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(14, 1fr);
     align-items: center; }
   .cards__img {
-    grid-column: 2/8;
-    padding-right: 0%;
+    grid-column: 4/8;
+    padding: 10px;
     text-align: center; }
     .cards__img--size {
-      width: 100%;
+      width: 80%;
       height: auto; }
   .cards__description {
     grid-column: 8/12;
@@ -493,38 +510,36 @@ h2 h3 h4 {
       text-align: center; }
   .cards__title {
     background: none;
-    color: #858282; }
+    color: #000000; }
   .cards__img2 {
-    grid-column: 8/13;
+    grid-column: 8/12;
     padding-right: 0%;
     margin-left: 0;
     text-align: right; }
   .cards__description2 {
-    grid-column: 2/8;
+    grid-column: 4/8;
     grid-row: 1/-1;
     padding: 5px;
     height: 200px;
     margin: 0%;
     margin-right: 0%;
     padding: 10px;
-    background: #000000;
     border-radius: 10px; }
     .cards__description2:hover {
       background-color: #e3b82d;
       font-size: 20px;
       color: #000000; }
   .cards__img3 {
-    grid-column: 2/8;
+    grid-column: 4/8;
     padding-right: 0%;
     text-align: center; }
   .cards__description3 {
     grid-column: 8/12;
+    margin-left: 15px;
     border-left: 6px solid #e3b82d;
     height: 250px;
     margin: 0%;
     padding: 10px;
-    padding-top: 0;
-    text-align: center;
     border-radius: 10px; }
     .cards__description3:hover {
       background-color: #e3b82d;
@@ -532,8 +547,6 @@ h2 h3 h4 {
       color: #000000; }
 
 .contacto {
-  background-color: black;
-  border: 5px solid #828585;
   margin: 0px auto;
   height: 580px; }
   .contacto__container {
@@ -548,6 +561,9 @@ h2 h3 h4 {
   .contacto__description {
     padding: 10px; }
   .contacto__title {
+    font-family: "Noto Serif", serif;
+    font-weight: 300px;
+    font-size: 30px;
     text-align: center;
     margin: 10px 0;
     font-family: "Noto Serif", serif;
@@ -557,12 +573,8 @@ h2 h3 h4 {
     padding: .7em 0;
     line-height: 1.5;
     font-family: "Noto Serif KR", serif;
-    font-size: 18px;
+    font-size: 22px;
     color: #828585; }
-  .contacto__title {
-    font-family: "Noto Serif", serif;
-    font-weight: 300px;
-    font-size: 18px; }
   .contacto__questions {
     position: relative;
     margin: 25px;
@@ -603,7 +615,8 @@ h2 h3 h4 {
   @media screen and (min-width: 850px) {
     .contacto .contacto__container {
       flex-direction: row;
-      align-items: center; } }
+      align-items: center;
+      height: 500px; } }
 
 .page404 {
   margin: 0 auto;
@@ -641,60 +654,54 @@ h2 h3 h4 {
     .page404__enlace:hover {
       color: #828585; }
 
-.footer {
-  margin: 0;
-  padding: 0%;
-  padding-top: 10px;
-  width: auto;
-  background-color: #ffffff;
-  font-family: monospace; }
-  .footer__content {
-    height: 310px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center; }
-  .footer__title {
-    padding: 10px;
-    text-align: center;
-    font-family: "212 Phoenix Sans";
-    font-size: 40px;
-    color: #000000;
-    text-transform: capitalize;
-    line-height: 1rem; }
-  .footer__p {
-    max-width: 500px;
-    margin: 0px 10px;
-    line-height: 28px;
-    font-size: 14px;
-    font-family: "Noto Serif KR", serif; }
-  .footer__social {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 1rem 0 3rem 0; }
-    .footer__social--icons {
-      margin: 0 10px;
-      text-decoration: none;
-      color: #fff; }
-    .footer__social a {
-      color: #fff;
-      font-size: 1.1rem;
-      transition: color .4s ease; }
-  .footer__bottom {
-    background: #e3b82d;
-    width: 100%;
-    height: 40px;
-    padding: 0; }
-  .footer__bottom p {
-    font-family: "Noto Serif KR", serif;
-    font-size: 14px;
-    word-spacing: 2px;
-    text-transform: capitalize; }
-    .footer__bottom p--italic {
-      font-style: italic;
-      opacity: .5;
-      font-weight: 200px;
-      color: #000000; }
+.footer__content {
+  margin-top: 40px;
+  height: 310px;
+  background-color: #000000;
+  font-family: monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center; }
+
+.footer__title {
+  padding: 10px;
+  text-align: center;
+  font-family: "212 Phoenix Sans";
+  font-size: 60px;
+  color: #e3b82d;
+  text-transform: capitalize;
+  line-height: 1rem; }
+
+.footer__p {
+  max-width: 500px;
+  margin: 0px 10px;
+  line-height: 28px;
+  font-size: 16px;
+  font-family: "Noto Serif KR", serif;
+  color: #828585; }
+
+.footer__social {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 1rem 0; }
+  .footer__social--icons {
+    margin: 0 10px;
+    text-decoration: none; }
+  .footer__social a {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: color .4s ease; }
+
+.footer__bottom {
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  color: #e3b82d;
+  font-family: "Noto Serif KR", serif;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize; }
